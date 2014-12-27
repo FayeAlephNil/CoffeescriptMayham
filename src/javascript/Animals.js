@@ -5,10 +5,11 @@
   species = require('./biology/species');
 
   yell = function(person) {
-    var age_string, class_string, dead_string, gender_string;
-    age_string = "" + person.name + " " + (person.dead ? "was" : "is") + " " + person.age + ".";
-    gender_string = "" + person.name + "  " + (person.dead ? "was" : "is") + " " + person.gender + ".";
-    class_string = "" + person.name + " " + (person.dead ? "was" : "is") + " " + person.class_of_life + "-class.";
+    var age_string, class_string, dead_string, gender_string, is_was;
+    is_was = "" + (person.dead ? "was" : "is");
+    age_string = "" + person.name + " " + is_was + " " + person.age + ".";
+    gender_string = "" + person.name + " " + is_was + " " + person.gender + ".";
+    class_string = "" + person.name + " " + is_was + " " + person.class_of_life + "-class.";
     dead_string = "" + person.name + " is " + (person.dead ? "dead" : "alive") + ".";
     return alert("" + age_string + " " + gender_string + " " + class_string + " " + dead_string);
   };
