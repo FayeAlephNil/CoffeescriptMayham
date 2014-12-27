@@ -8,14 +8,14 @@
 
   kingdoms = require('./kingdoms');
 
-  root.Cordata = (function(_super) {
-    __extends(Cordata, _super);
+  root.Chordata = (function(_super) {
+    __extends(Chordata, _super);
 
-    function Cordata(gender, age, dead, species, genus, family, order, the_class) {
-      Cordata.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, "Cordata");
+    function Chordata(gender, age, dead, species, genus, family, order, the_class) {
+      Chordata.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, "Cordata");
     }
 
-    return Cordata;
+    return Chordata;
 
   })(kingdoms.Animal);
 

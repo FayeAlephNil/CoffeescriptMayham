@@ -17,6 +17,6 @@
 
     return Mammal;
 
-  })(phylums.Cordata);
+  })(phylums.Chordata);
 
 }).call(this);

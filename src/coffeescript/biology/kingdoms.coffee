@@ -1,9 +1,12 @@
 root = exports ? this
+domains = require './domains'
 
-class root.Organism
-  constructor: (@age, @dead, @species, @genus, @family, @order, @class, @phylum, @kingdom) ->
-
-class root.Animal extends root.Organism
-  constructor: (@gender, age, dead, species, genus, family, order, the_class, phylum) ->
-    super(age, dead, species, genus, family,
+class root.Animal extends domains.Eukaryote
+  constructor: (gender, age, dead, species, genus, family, order, the_class, phylum) ->
+    super(gender, age, dead, species, genus, family,
     order, the_class, phylum, "Animalia")
+
+class root.Plant extends domains.Eukaryote
+  constructor: (gender, age, dead, species, genus, family, order, the_class, phylum) ->
+    super(gender, age, dead, species, genus, family,
+    order, the_class, phylum, "Plantae")
