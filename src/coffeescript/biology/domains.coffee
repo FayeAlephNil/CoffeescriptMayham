@@ -9,6 +9,6 @@ class root.Archea extends Organism
   constructor: (gender, age, dead, species, genus, family, order, the_class, phylum, kingdom) ->
     super(gender, age, dead,species,genus,family,order, the_class, kingdom, 'Archea')
 
-class root.Eubacteria extends Organism
+class root.Bacteria extends Organism
   constructor: (gender, age, dead, species, genus, family, order, the_class, phylum, kingdom) ->
-    super(gender, age, dead,species,genus,family,order, the_class, kingdom, 'Eubacteria')
+    super(gender, age, dead,species,genus,family,order, the_class, kingdom, 'Bacteria')

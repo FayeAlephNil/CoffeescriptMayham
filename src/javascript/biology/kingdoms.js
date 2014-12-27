@@ -30,4 +30,37 @@
 
   })(domains.Eukaryote);
 
+  root.Fungi = (function(_super) {
+    __extends(Fungi, _super);
+
+    function Fungi(gender, age, dead, species, genus, family, order, the_class, phylum) {
+      Fungi.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, phylum, "Fungi");
+    }
+
+    return Fungi;
+
+  })(domains.Eukaryote);
+
+  root.Eubacteria = (function(_super) {
+    __extends(Eubacteria, _super);
+
+    function Eubacteria(gender, age, dead, species, genus, family, order, the_class, phylum) {
+      Eubacteria.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, phylum, "Eubacteria");
+    }
+
+    return Eubacteria;
+
+  })(domains.Bacteria);
+
+  root.Archaebacteria = (function(_super) {
+    __extends(Archaebacteria, _super);
+
+    function Archaebacteria(gender, age, dead, species, genus, family, order, the_class, phylum) {
+      Archaebacteria.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, phylum, "Archaebacteria");
+    }
+
+    return Archaebacteria;
+
+  })(domains.Archea);
+
 }).call(this);

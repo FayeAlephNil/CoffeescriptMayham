@@ -30,14 +30,14 @@
 
   })(Organism);
 
-  root.Eubacteria = (function(_super) {
-    __extends(Eubacteria, _super);
+  root.Bacteria = (function(_super) {
+    __extends(Bacteria, _super);
 
-    function Eubacteria(gender, age, dead, species, genus, family, order, the_class, phylum, kingdom) {
-      Eubacteria.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, kingdom, 'Eubacteria');
+    function Bacteria(gender, age, dead, species, genus, family, order, the_class, phylum, kingdom) {
+      Bacteria.__super__.constructor.call(this, gender, age, dead, species, genus, family, order, the_class, kingdom, 'Bacteria');
     }
 
-    return Eubacteria;
+    return Bacteria;
 
   })(Organism);
 
