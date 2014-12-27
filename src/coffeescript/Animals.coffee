@@ -13,7 +13,7 @@ class Dog extends Animal
 class Person extends Primape
   constructor: (@name, @class, gender, age, dead) -> super(gender, age, dead, "Homo Sapiens")
 
-  grow: (years) ->
+  grow: (years) =>
     alert "#{@name} has aged #{years} years"
     @age += years
 
@@ -23,6 +23,9 @@ yell = (person) ->
   class_string = "#{person.name} #{if person.dead then "was" else "is"} #{person.class}-class."
   dead_string = "#{person.name} is #{if person.dead then "dead" else "alive"}."
   alert "#{age_string} #{gender_string} #{class_string} #{dead_string}"
+
+alert = (s) ->
+  console.log(s)
 
 wes = new Person("Wes", "middle", "Male", 14, false)
 yell wes
